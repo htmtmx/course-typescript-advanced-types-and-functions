@@ -4,13 +4,13 @@
 // Se puede acceder a los valores de un enum con la notación de punto
 // Los valores de un enum pueden ser números o cadenas de texto
 
-enum ROLES {
+export enum ROLES {
   ADMIN = 'admin',
   SELLER = 'seller',
   CUSTOMER = 'customer',
 }
 
-type User = {
+export type User = {
   username: string;
   role: ROLES;
 }
