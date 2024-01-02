@@ -38,6 +38,6 @@ export const getProduct = (productName: string) => {
 
 }
 export const findProducts = (dto: FindProductDto): Product[] => {
-
+  dto.tags?.push('tag1');
   return products;
 }

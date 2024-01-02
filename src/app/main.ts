@@ -32,7 +32,8 @@ const productsFinded = findProducts({
   stock: 90,
   color: 'red',
   size: 'XL',
-  isNew: true
+  isNew: true,
+  tags: ['tag1', 'tag2']
 });
 
 console.log(productsFinded);

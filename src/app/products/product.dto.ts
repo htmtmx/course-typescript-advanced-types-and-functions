@@ -10,7 +10,9 @@ export interface UpdateProductDto extends Partial<CreateProductDto>{ }
 
 export interface RequiredProductDto extends Required<Product> { }
 
-export interface FindProductDto extends Readonly<Partial<Product>> { }
+export interface FindProductDto extends Readonly<Partial<Omit<Product, 'tags'>>> {
+  tags: ReadonlyArray<string>;
+}
 
 // Omit es una utilidad de TypeScript que permite omitir propiedades de un tipo.
 // En este caso, omitimos las propiedades que no queremos que se puedan modificar
