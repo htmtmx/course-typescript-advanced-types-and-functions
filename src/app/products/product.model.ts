@@ -3,8 +3,14 @@ import { Category } from "../categories/category.model";
 import { Base } from "../base.model";
 
 export interface Product extends Base {
-    title: string,
-    stock: number,
-    size?: Sizes
-    category: Category
+  title: string,
+  image: string,
+  description: string,
+  stock: number,
+  size?: Sizes,
+  color: string,
+  price: number,
+  category: Category,
+  isNew: boolean,
+  tags: string[]
 }
