@@ -4,6 +4,13 @@ export interface CreateProductDto extends Omit<Product, 'id' | 'createdAt' | 'up
   categodyId: string;
 }
 
+export interface PickProductDto extends Pick<Product, 'title' | 'stock'> { }
+
+export interface UpdateProductDto extends Partial<CreateProductDto>{ }
+
+export interface RequiredProductDto extends Required<Product> { }
+
+
 // Omit es una utilidad de TypeScript que permite omitir propiedades de un tipo.
 // En este caso, omitimos las propiedades que no queremos que se puedan modificar
 // al crear un producto.
