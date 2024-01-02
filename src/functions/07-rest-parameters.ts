@@ -1,5 +1,5 @@
 //@ts-check
-import { User, ROLES } from "./01-enum";
+import { User, ROLES } from "../new_types/01-enum";
 
 const currentUser:User = {
   username: 'admin01',
