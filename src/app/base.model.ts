@@ -1,5 +1,5 @@
 export interface Base {
-  id: string | number,
-  createdAt: Date,
+  readonly id: string | number,
+  readonly createdAt: Date,
   updatedAt: Date,
 }
